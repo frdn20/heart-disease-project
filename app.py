@@ -15,7 +15,7 @@ st.set_page_config(
 def load_model():
     try:
         # Pastikan nama file ini sesuai dengan file model terbaik Anda
-        with open('random_forest_model_terbaik.pkl', 'rb') as file:
+        with open('random_forest_model.pkl', 'rb') as file:
             model = pickle.load(file)
         return model
     except FileNotFoundError:
@@ -197,3 +197,4 @@ if model is not None:
             st.markdown("* Tetap lakukan pemeriksaan kesehatan rutin (Medical Check-Up).")
             
         st.caption("⚠️ **PENTING:** Aplikasi ini adalah alat bantu prediksi. Selalu ikuti nasihat dan diagnosis dari tenaga medis profesional.")
+
